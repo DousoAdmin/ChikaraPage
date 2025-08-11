@@ -1,13 +1,11 @@
-name: Deploy React App to Hostinger
+name: Build and Deploy React App to Hostinger via Webhook
 
 on:
   push:
     branches: [ "develop" ]
-  pull_request:
-    branches: [ "develop" ]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,21 +15,20 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22'  # Asegúrate de que tu proyecto sea compatible con Node 22
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build React App
+      - name: Build the React App
         run: npm run build
 
-      - name: Trigger Hostinger Deployment
-        env:
-          HOSTINGER_WEBHOOK_URL: https://webhooks.hostinger.com/deploy/8b7dc00d936c06e5a8b058f6a0c2b254
-        run: |
-          if [ -z "$HOSTINGER_WEBHOOK_URL" ]; then
-            echo "Webhook URL is not set!"
-            exit 1
-          fi
-          curl -X POST "$HOSTINGER_WEBHOOK_URL"
-      
+      - name: Compress dist folder
+        run: zip -r build.zip dist
+
+      - name: Upload build.zip to Hostinger
+  run: |
+    curl -X POST \
+      -F "file=@build.zip" \
+      -F "token=clave-secreta-123" \
+      https://chikaraoficial.org/deploy.php

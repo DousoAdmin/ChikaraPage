@@ -3,9 +3,11 @@ name: Build and Deploy React App to Hostinger via Webhook
 on:
   push:
     branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,8 +29,8 @@ jobs:
         run: zip -r build.zip dist
 
       - name: Upload build.zip to Hostinger
-  run: |
-    curl -X POST \
-      -F "file=@build.zip" \
-      -F "token=clave-secreta-123" \
-      https://chikaraoficial.org/deploy.php
+        run: |
+          curl -X POST \
+            -F "file=@build.zip" \
+            -F "token=clave-secreta-123" \
+            https://chikaraoficial.org/deploy.php

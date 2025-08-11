@@ -25,8 +25,9 @@ jobs:
       - name: Build the React App
         run: npm run build
 
-      - name: Compress dist folder
-        run: zip -r build.zip dist
+      - name: Compress dist content (without parent folder)
+        run: cd dist && zip -r ../build.zip .
+
 
       - name: Upload build.zip to Hostinger
         run: |

@@ -1,0 +1,37 @@
+name: Build and Deploy React App to Hostinger via Webhook
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the React App
+        run: npm run build
+
+      - name: Compress dist content (without parent folder)
+        run: cd dist && zip -r ../build.zip .
+
+
+      - name: Upload build.zip to Hostinger
+        run: |
+          curl -X POST \
+            -F "file=@build.zip" \
+            -F "token=clave-secreta-123" \
+            https://chikaraoficial.org/deploy.php

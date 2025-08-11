@@ -2,9 +2,9 @@ name: Build and Deploy React App to Hostinger via Webhook
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   deploy:

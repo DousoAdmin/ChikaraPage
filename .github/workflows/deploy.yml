@@ -1,4 +1,4 @@
-name: Deploy React App to Hostinger 
+name: Deploy React App to Hostinger
 
 on:
   push:
@@ -11,22 +11,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-    - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22' # or your desired Node.js version
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'  # Asegúrate de que tu proyecto sea compatible con Node 22
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Build React App
-      run: npm run build
+      - name: Build React App
+        run: npm run build
 
-    - name: Trigger Hostinger Deployment
-      run: curl -X POST ${{ secrets.HOSTINGER_WEBHOOK_URL }}
-      env:
-        HOSTINGER_WEBHOOK_URL: ${{ secrets.HOSTINGER_WEBHOOK_URL }} # Store webhook as a GitHub secret
-      
+      - name: Trigger Hostinger Deployment
+        env:
+          HOSTINGER_WEBHOOK_URL: ${{ secrets.HOSTINGER_WEBHOOK_URL }}
+        run: |
+          if [ -z "$HOSTINGER_WEBHOOK_URL" ]; then
+            echo "Webhook URL is not set!"
+            exit 1
+          fi
+          curl -X POST "$HOSTINGER_WEBHOOK_URL"

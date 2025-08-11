@@ -27,10 +27,11 @@ jobs:
 
       - name: Trigger Hostinger Deployment
         env:
-          HOSTINGER_WEBHOOK_URL: ${{ secrets.HOSTINGER_WEBHOOK_URL }}
+          HOSTINGER_WEBHOOK_URL: https://webhooks.hostinger.com/deploy/8b7dc00d936c06e5a8b058f6a0c2b254
         run: |
           if [ -z "$HOSTINGER_WEBHOOK_URL" ]; then
             echo "Webhook URL is not set!"
             exit 1
           fi
           curl -X POST "$HOSTINGER_WEBHOOK_URL"
+      

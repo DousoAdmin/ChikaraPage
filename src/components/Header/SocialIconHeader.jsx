@@ -14,7 +14,7 @@ const IconHeader = (props) => {
 
   return (
     <a
-      className="group flex items-center p-2 hover:bg-gray-100 dark:hover:bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-white duration-200 transition-all"
+      className="group flex items-center p-2  hover:bg-slate-900 dark:hover:bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-white duration-200 transition-all"
       href={`${url}`}
       target="_blank"
       rel="noopener noreferrer"

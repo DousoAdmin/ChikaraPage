@@ -52,7 +52,7 @@ const MainContent = ({ eventsRef, preinscriptionRef, donationsRef, contactusRef 
         </ErrorBoundary>
       ),
     },
-    {
+    /*{
       id: 'twitchSection',
       title: 'Nuestro canal de Twitch',
       subtitle: 'Streaming, podcast, videojuegos, reacciones',
@@ -63,7 +63,7 @@ const MainContent = ({ eventsRef, preinscriptionRef, donationsRef, contactusRef 
           </Suspense>
         </ErrorBoundary>
       ),
-    },
+    },*/
     {
       id: 'testimonialsSection',
       title: 'Nuestros participantes dicen...',

@@ -12,7 +12,7 @@
 
 📆 **Inicio**: Sábado, 25 de Abril de 2023  
 💻 **Primera Carga**: Domingo, 28 de Mayo de 2023  
-🌐 **Versión Actual**: `v2.0` Miércoles, 06 de Agosto de 2025
+🌐 **Versión Actual**: `v2.0` (Agosto 2025)
 
 Carga Incial del Proyecto:
  - Se carga con una prototipo inicial como version 0.3.
@@ -125,8 +125,8 @@ Se migraron componentes, se implementaron nuevas rutas y subpáginas, se optimiz
 1. **🔧 Mejora de transición del header al desplazarse**
    - Suavizar el cambio de tamaño del header al hacer scroll para evitar saltos visuales bruscos.
 
-2. **🎨 Corrección del hover en redes sociales (modo claro)**
-   - Ajustar el estilo de fondo al pasar el cursor por los iconos de redes sociales en el DrawerMenu, ya que en modo claro no se aplica correctamente.
+   2. **🎨 Corrección del hover en redes sociales (modo claro)**
+      - Ajustar el estilo de fondo al pasar el cursor por los iconos de redes sociales en el DrawerMenu, ya que en modo claro no se aplica correctamente.
 
 3. **📱 Ajuste de responsive en el Header**
    - Prevenir el colapso o superposición de iconos, botones y anclas al reducir la pantalla en dispositivos móviles.
@@ -159,10 +159,16 @@ Se migraron componentes, se implementaron nuevas rutas y subpáginas, se optimiz
     - Incluir carrusel de imágenes con posibilidad de desplazamiento manual y automático.
     - Permitir cerrar el popup o redirigir a una sección de noticias detalladas.
    
-11. **🔁  Eliminación de la sección "Nuestro canal de Twitch**
-    - Por motivos de rendimiento y experiencia de usuario, se ha propuesto retirar esta sección de la _onepage_ principal.
-    - La decisión se tomó tras obtener resultados negativos en pruebas de rendimiento con herramientas como **Lighthouse**, **GTMetrix** y **PageSpeed Insights**, debido a los _iframes_ embebidos.  
-    - El canal de Twitch no ha tenido promoción ni actividad relevante desde 2024, tras su auge durante la pandemia.  
+   11. **🔁  Eliminación de la sección "Nuestro canal de Twitch**
+      - Por motivos de rendimiento y experiencia de usuario, se ha propuesto retirar esta sección de la _onepage_ principal.
+      - La decisión se tomó tras obtener resultados negativos en pruebas de rendimiento con herramientas como **Lighthouse**, **GTMetrix** y **PageSpeed Insights**, debido a los _iframes_ embebidos.  
+      - El canal de Twitch no ha tenido promoción ni actividad relevante desde 2024, tras su auge durante la pandemia.  
+
+   12. **📄 Modificación sección de Auspiciadores**
+      - Cambiar el logo y enlace de JapanesesPop101 por Geek Erza Store en la sección de auspiciadores.
+
+13. **🎨 Modificación color fondos secciones modo claro**
+    - Cambiar el color de background de los fodos de las secciones en modo claro para que tenga claridad con color del fondo de la página en modo claro.
 
 ---
 
@@ -201,11 +207,14 @@ Se migraron componentes, se implementaron nuevas rutas y subpáginas, se optimiz
 10. **🌐 Versión multilenguaje**
     - Implementar selector de idioma (Español, Japonés e Inglés) para mejorar accesibilidad global.
 
-1. **🔔 Sistema de notificaciones**
+11. **🔔 Sistema de notificaciones**
     - Agregar notificaciones emergentes o alertas informativas dentro del sitio web.
 
 12. **📰 Sección de noticias o blog interactivo**
     - Crear un blog donde se compartan actualizaciones, eventos, artículos y noticias relacionadas con la comunidad Chikara.
+
+13. **🔡 Implementación subpágina sobre creación e historia de Chikara**
+    - Crear un subpágina donde se compartan la historia de la creación y evolución de la organización Chikara.
 
 ---
 
@@ -213,6 +222,16 @@ Se migraron componentes, se implementaron nuevas rutas y subpáginas, se optimiz
 
 - Agregar efectos de **scroll reveal** en secciones y objetos del sitio para que aparezcan progresivamente al hacer scroll, mejorando la experiencia visual dinámica.
 
+
+---
+
+   ## PRIMERA SEMANA CARGA VERSIÓN 2.0 Y ACTUALIZACIÓNES VERSIÓN 2.1
+
+  **Avances por día - Cuarta Semana: (Desarollo de los section del main,  nueva section y DarkMode)**
+   - **Miércoles, 06 de Mayo:** Carga de la versión 2.0 de la página de organización Chikara
+   - **Jueves, 07 de Mayo:** Completado cambios importantes número 2, 11 y 12
+   - **Viernes, 08 de Mayo:** 
+   - **Sábado, 09 de Mayo:** 
 
 ---
 

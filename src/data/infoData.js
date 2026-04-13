@@ -170,10 +170,10 @@ export const sponsors = [
     logo: 'japanFoundation'
   },
   {
-    id: 'japanesepod',
-    name: 'JapanesePod101',
-    url: 'https://www.youtube.com/@JapanesePod101',
-    logo: 'jp101'
+    id: 'geekerzastore',
+    name: 'Geek Erza Store',
+    url: 'https://www.geekerza.store/',
+    logo: 'geekerza'
   },
   {
     id: 'plataforma',
@@ -340,28 +340,8 @@ export const collaborators = [
 ]
 
 export const flags = {
-  argentina: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-argentina_1f1e6-1f1f7.png',
-  bolivia: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-bolivia_1f1e7-1f1f4.png',
-  canada: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-canada_1f1e8-1f1e6.png',
-  chile: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-chile_1f1e8-1f1f1.png',
   colombia: 'https://em-content.zobj.net/thumbs/160/sony/336/flag-colombia_1f1e8-1f1f4.png',
-  costarica: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-costa-rica_1f1e8-1f1f7.png',
-  cuba: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-cuba_1f1e8-1f1fa.png',
-  ecuador: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-ecuador_1f1ea-1f1e8.png',
-  elsalvador: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-el-salvador_1f1f8-1f1fb.png',
-  espana: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-spain_1f1ea-1f1f8.png',
-  guatemala: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-guatemala_1f1ec-1f1f9.png',
-  honduras: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-honduras_1f1ed-1f1f3.png',
-  mexico: 'https://em-content.zobj.net/thumbs/160/sony/336/flag-mexico_1f1f2-1f1fd.png',
-  nicaragua: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-nicaragua_1f1f3-1f1ee.png',
-  panama: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-panama_1f1f5-1f1e6.png',
-  paraguay: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-paraguay_1f1f5-1f1fe.png',
-  peru: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-peru_1f1f5-1f1ea.png',
-  puertorico: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-puerto-rico_1f1f5-1f1f7.png',
-  repdominicana: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-dominican-republic_1f1e9-1f1f4.png',
-  uruguay: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-uruguay_1f1fa-1f1fe.png',
-  usa: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-united-states_1f1fa-1f1f8.png',
-  venezuela: 'https://em-content.zobj.net/thumbs/120/sony/336/flag-venezuela_1f1fb-1f1ea.png'
+  mexico: 'https://em-content.zobj.net/thumbs/160/sony/336/flag-mexico_1f1f2-1f1fd.png'
 }
 
 /*

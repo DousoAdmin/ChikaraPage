@@ -2,7 +2,7 @@ import TermsContent from '../../components/Terms/TermsContent';
 
 const AccountPolicy = () => {
   return (
-    <TermsContent>
+    <TermsContent className="text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <h2>Política de cuentas</h2>
       <p>
         Aquí va el contenido de la Política de cuentas, versión 01/08/2025...
